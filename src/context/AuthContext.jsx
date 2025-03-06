@@ -9,9 +9,12 @@ export const AuthProvider = ({ children }) => {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const res = await axios.get('http://localhost:4000/auth/profile', {
-          withCredentials: true,
-        });
+        const res = await axios.get(
+          `${import.meta.env.VITE_API_URL}/auth/profile`,
+          {
+            withCredentials: true,
+          }
+        );
         setUser(res.data);
       } catch (error) {
         console.error('User not authenticated');
