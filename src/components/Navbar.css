@@ -1,0 +1,76 @@
+/* Navbar Styling */
+.navbar {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  padding: 10px 20px; /* Reduced padding for a compact navbar */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 40px;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.navbar-logo {
+  font-size: 22px; /* Slightly smaller font size */
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: white;
+  font-size: 16px; /* Smaller font for a cleaner look */
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding: 6px 12px; /* Reduced padding */
+  border-radius: 6px;
+}
+
+.navbar-link:hover {
+  color: #ffcc00;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Buttons for Login & Logout */
+.navbar-button {
+  color: white;
+  padding: 6px 12px; /* Reduced padding */
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.navbar-button:hover {
+  background: #ff5733;
+}
+
+.navbar-button.logout {
+  background: #ff1e1e;
+}
+
+.navbar-button.logout:hover {
+  background: #e60000;
+}

@@ -1,0 +1,95 @@
+.add-task-container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.add-task-container h2 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Subtasks */
+.subtask-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.subtask-container input {
+  flex: 1;
+}
+
+.subtask-container button {
+  background: #dc3545;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.subtask-container button:hover {
+  background: #b02a37;
+}
+
+/* File input */
+input[type='file'] {
+  border: none;
+  padding: 5px;
+}
+
+@media (max-width: 600px) {
+  .add-task-container {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: 14px;
+  }
+}
